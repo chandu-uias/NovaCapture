@@ -26,17 +26,7 @@ mongoose.connect(mongoURL, { useNewUrlParser: true })
     }).catch((error) =>
         console.error("Failed to connected"));
 
-// // Sample data (you can replace this with an actual database)
 
-// const userSchema = new mongoose.Schema({
-//     username: String,
-//     email: String,
-//     password: String,
-//     mobile: Integer
-// });
-
-
-// const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
     username: {
@@ -53,11 +43,10 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true,
-        // Additional password validation can be added here, such as minimum length or complex requirements
+        
     },
     mobile: {
-        type: Number, // Changed from 'Integer' to 'Number'
-        // Additional validation for mobile numbers can be added here
+        type: Number, 
     }
 });
 
