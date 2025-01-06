@@ -38,7 +38,7 @@ const ContactUs= ({ photographer }) => {
         ]
         
     };
-    const whatsappNumber = '8247332524'; 
+    const whatsappNumber = '323456789'; 
   return (
     <div className='bgimage'>
     <div>
